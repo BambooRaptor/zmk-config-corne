@@ -20,31 +20,55 @@
         bt_prof_1 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <6 24>;
+            layers = <1>;
         };
 
         bt_prof_2 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <7 24>;
+            layers = <1>;
         };
 
         bt_prof_3 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <8 24>;
+            layers = <1>;
         };
 
         bt_prof_4 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <24 9>;
+            layers = <1>;
         };
 
         bt_prof_5 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <24 10>;
+            layers = <1>;
         };
 
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <24 35>;
+            layers = <1>;
+        };
+
+        test_default_layer_1 {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        test_lower_1 {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <17 18>;
+            layers = <1>;
+        };
+
+        test_raise_1 {
+            bindings = <&kp ASTERISK>;
+            key-positions = <17 18>;
+            layers = <2>;
         };
     };
 
