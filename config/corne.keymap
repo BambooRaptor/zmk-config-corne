@@ -16,6 +16,26 @@
             bindings = <&mo 3>;
             key-positions = <37 40>;
         };
+
+        bt_prof_1 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <0 6>;
+        };
+
+        bt_prof_2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <0 7>;
+        };
+
+        bt_prof_3 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <0 8>;
+        };
+
+        bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <0 11>;
+        };
     };
 
     keymap {
