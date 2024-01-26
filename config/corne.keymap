@@ -19,22 +19,32 @@
 
         bt_prof_1 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <0 6>;
+            key-positions = <6 24>;
         };
 
         bt_prof_2 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <0 7>;
+            key-positions = <7 24>;
         };
 
         bt_prof_3 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <0 8>;
+            key-positions = <8 24>;
+        };
+
+        bt_prof_4 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <24 9>;
+        };
+
+        bt_prof_5 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <24 10>;
         };
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <0 11>;
+            key-positions = <24 35>;
         };
     };
 
