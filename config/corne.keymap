@@ -37,10 +37,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp ESCAPE  &none     &kp RET    &kp FSLH  &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4    &kp N5    &none
-&none  &kp LSHFT   &none     &kp COMMA  &kp DOT   &kp SEMI     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &none
-&none  &kp LCTRL   &kp LALT  &kp LGUI   &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &none
-                             &kp LALT   &mo 1     &kp SPACE    &kp RET    &mo 2      &kp LCTRL
+&none  &none      &kp ESCAPE      &kp RET    &kp FSLH  &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4    &kp N5    &none
+&none  &none      &kp LEFT_SHIFT  &kp COMMA  &kp DOT   &kp SEMI     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &none
+&none  &kp LCTRL  &kp LALT        &kp LGUI   &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &none
+                                  &kp LALT   &mo 1     &kp SPACE    &kp RET    &mo 2      &kp LCTRL
             >;
         };
 
@@ -52,10 +52,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp F1  &kp F2   &kp F3    &kp F4   &kp END       &kp DEL    &none     &kp UP     &none      &kp TAB   &none
-&none  &kp F5  &kp F6   &kp F7    &kp F8   &kp PG_UP     &kp PG_DN  &kp LEFT  &kp DOWN   &kp RIGHT  &kp RET   &none
-&none  &kp F9  &kp F10  &kp F11   &kp F12  &kp INSERT    &kp HOME   &none     &kp LALT   &kp LCTRL  &kp LGUI  &none
-                        &kp LALT  &mo 1    &kp RET       &kp RET    &mo 2     &kp LCTRL
+&none  &kp F1  &kp F2   &kp F3    &kp F4   &kp END           &kp PAGE_UP  &kp BACKSPACE  &kp UP     &kp DELETE  &kp TAB   &none
+&none  &kp F5  &kp F6   &kp F7    &kp F8   &kp LEFT_SHIFT    &kp PG_DN    &kp LEFT       &kp DOWN   &kp RIGHT   &kp RET   &none
+&none  &kp F9  &kp F10  &kp F11   &kp F12  &kp INSERT        &kp HOME     &none          &kp LALT   &kp LCTRL   &kp LGUI  &none
+                        &kp LALT  &mo 1    &kp RET           &kp RET      &mo 2          &kp LCTRL
             >;
         };
 
