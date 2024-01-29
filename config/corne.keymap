@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp F1  &kp F2   &kp F3    &kp F4   &kp END           &kp PAGE_UP  &kp BACKSPACE  &kp UP     &kp DELETE  &kp TAB   &none
-&none  &kp F5  &kp F6   &kp F7    &kp F8   &kp LEFT_SHIFT    &kp PG_DN    &kp LEFT       &kp DOWN   &kp RIGHT   &kp RET   &none
-&none  &kp F9  &kp F10  &kp F11   &kp F12  &kp INSERT        &kp HOME     &none          &kp LALT   &kp LCTRL   &kp LGUI  &none
-                        &kp LALT  &mo 1    &kp RET           &kp RET      &mo 2          &kp LCTRL
+&none  &kp F1  &kp F2   &kp F3            &kp F4   &kp END           &kp PAGE_UP  &kp BACKSPACE  &kp UP     &kp DELETE  &kp TAB   &none
+&none  &kp F5  &kp F6   &kp F7            &kp F8   &kp LEFT_SHIFT    &kp PG_DN    &kp LEFT       &kp DOWN   &kp RIGHT   &kp RET   &none
+&none  &kp F9  &kp F10  &kp F11           &kp F12  &kp INSERT        &kp HOME     &none          &kp LALT   &kp LCTRL   &kp LGUI  &none
+                        &kp LEFT_CONTROL  &mo 1    &kp RET           &kp RET      &mo 2          &kp LCTRL
             >;
         };
 
