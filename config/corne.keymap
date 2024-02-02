@@ -30,10 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y           &kp U  &kp I             &kp O             &kp P          &none
-&none  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H           &kp J  &kp K             &kp L             &kp BACKSPACE  &none
-&none  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N           &kp M  &kp LEFT_ALT      &kp LEFT_CONTROL  &kp LEFT_WIN   &none
-                     &kp LEFT_ALT  &mo 1  &kp SPACE    &kp LEFT_SHIFT  &mo 2  &kp LEFT_CONTROL
+&kp ESCAPE        &kp Q  &kp W  &kp E           &kp R  &kp T        &kp Y      &kp U  &kp I            &kp O         &kp P          &kp C_VOLUME_UP
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D           &kp F  &kp G        &kp H      &kp J  &kp K            &kp L         &kp BACKSPACE  &kp LEFT_ALT
+&none             &kp Z  &kp X  &kp C           &kp V  &kp B        &kp N      &kp M  &kp TAB          &kp LEFT_WIN  &kp ENTER      &kp C_VOLUME_DOWN
+                                &kp LEFT_SHIFT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp RIGHT_SHIFT
             >;
         };
 
@@ -45,10 +45,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none      &kp ESCAPE      &kp RET    &kp FSLH  &kp GRAVE           &kp N1          &kp N2     &kp N3     &kp N4    &kp N5    &none
-&none  &none      &kp LEFT_SHIFT  &kp COMMA  &kp DOT   &kp SEMI            &kp N6          &kp N7     &kp N8     &kp N9    &kp N0    &none
-&none  &kp LCTRL  &kp LALT        &kp LGUI   &none     &kp SINGLE_QUOTE    &kp MINUS       &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &none
-                                  &kp LALT   &mo 1     &kp SPACE           &kp LEFT_SHIFT  &mo 2      &kp LCTRL
+&none      &kp GRAVE     &kp BSLH  &kp LS(QMARK)  &kp SQT       &kp LS(DQT)     &kp LS(LPAR)    &kp LS(RPAR)  &kp N1  &kp N2  &kp N3  &none
+&kp LCTRL  &kp LS(PIPE)  &kp FSLH  &kp SEMI       &kp COMMA     &kp DOT         &kp LS(UNDER)   &kp LS(PLUS)  &kp N4  &kp N5  &kp N6  &kp LEFT_ALT
+&none      &kp LGUI      &kp LBKT  &kp RBKT       &kp LS(LBRC)  &kp LS(RBRC)    &kp MINUS       &kp EQUAL     &kp N7  &kp N8  &kp N9  &none
+                                   &none          &mo 1         &none           &kp LEFT_SHIFT  &mo 2         &kp N0
             >;
         };
 
@@ -60,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp F1  &kp F2   &kp F3            &kp F4   &kp END           &kp PAGE_UP  &kp BACKSPACE  &kp UP     &kp DELETE  &kp TAB   &none
-&none  &kp F5  &kp F6   &kp F7            &kp F8   &kp LEFT_SHIFT    &kp PG_DN    &kp LEFT       &kp DOWN   &kp RIGHT   &kp RET   &none
-&none  &kp F9  &kp F10  &kp F11           &kp F12  &kp INSERT        &kp HOME     &none          &kp LALT   &kp LCTRL   &kp LGUI  &none
-                        &kp LEFT_CONTROL  &mo 1    &kp RET           &kp RET      &mo 2          &kp LCTRL
+&none             &kp F1  &kp F2   &kp F3        &kp F4   &none             &kp PAGE_UP  &kp BACKSPACE  &kp UP    &kp DELETE    &none    &kp C_BRIGHTNESS_INC
+&kp LEFT_CONTROL  &kp F5  &kp F6   &kp F7        &kp F8   &none             &kp PG_DN    &kp LEFT       &kp DOWN  &kp RIGHT     &kp RET  &kp LEFT_ALT
+&none             &kp F9  &kp F10  &kp F11       &kp F12  &none             &kp INSERT   &kp HOME       &kp END   &kp LEFT_WIN  &none    &kp C_BRIGHTNESS_DEC
+                                   &kp LEFT_ALT  &mo 1    &kp LEFT_SHIFT    &none        &mo 2          &none
             >;
         };
 
