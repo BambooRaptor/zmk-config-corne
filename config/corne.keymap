@@ -20,10 +20,10 @@
     };
 
     macros {
-        mac_snip: mac_snip {
+        snipping_tool: mac_snip {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(LC(NUMBER_4)))>;
+            bindings = <&kp LS(LG(S))>;
             label = "MAC_SNIP";
         };
 
@@ -82,9 +82,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&mac_snip       &kp GRAVE     &kp BSLH  &kp LS(QMARK)  &kp SQT    &kp LS(DQT)    &kp LS(LPAR)    &kp LS(RPAR)  &kp N7  &kp N8  &kp N9  &mac_terminal
+&snipping_tool  &kp GRAVE     &kp BSLH  &kp LS(QMARK)  &kp SQT    &kp LS(DQT)    &kp LS(LPAR)    &kp LS(RPAR)  &kp N7  &kp N8  &kp N9  &mac_terminal
 &kp LCTRL       &kp LS(PIPE)  &kp FSLH  &kp SEMI       &kp COMMA  &kp DOT        &kp MINUS       &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp LEFT_ALT
-&mac_screen_ss  &kp LGUI      &kp TAB   &kp LS(COLON)  &kp LBKT   &kp RBKT       &kp LS(LT)      &kp LS(GT)    &kp N1  &kp N2  &kp N3  &none
+&caps_word      &kp LGUI      &kp TAB   &kp LS(COLON)  &kp LBKT   &kp RBKT       &kp LS(LT)      &kp LS(GT)    &kp N1  &kp N2  &kp N3  &none
                                         &none          &mo 1      &none          &kp LEFT_SHIFT  &mo 2         &kp N0
             >;
         };
