@@ -27,32 +27,18 @@
             label = "MAC_SNIP";
         };
 
-        mac_screen_ss: mac_screen_ss {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_3))>;
-            label = "MAC_SCREEN_SS";
-        };
-
-        mac_copy: mac_copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(C)>;
-            label = "MAC_COPY";
-        };
-
-        mac_paste: mac_paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V)>;
-            label = "MAC_PASTE";
-        };
-
         mac_terminal: mac_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp ENTER>;
+            bindings = <&kp LGUI &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp ENTER>;
             label = "MAC_TERMINAL";
+        };
+
+        ctrl_win: ctrl_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT_CONTROL)>;
+            label = "CTRL_WIN";
         };
     };
 
@@ -82,7 +68,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&snipping_tool  &kp GRAVE     &kp BSLH  &kp LS(QMARK)  &kp SQT    &kp LS(DQT)    &kp LS(LPAR)    &kp LS(RPAR)  &kp N7  &kp N8  &kp N9  &mac_terminal
+&snipping_tool  &kp GRAVE     &kp BSLH  &kp LS(QMARK)  &kp SQT    &kp LS(DQT)    &kp LS(LPAR)    &kp LS(RPAR)  &kp N7  &kp N8  &kp N9  &none
 &kp LCTRL       &kp LS(PIPE)  &kp FSLH  &kp SEMI       &kp COMMA  &kp DOT        &kp MINUS       &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp LEFT_ALT
 &caps_word      &kp LGUI      &kp TAB   &kp LS(COLON)  &kp LBKT   &kp RBKT       &kp LS(LT)      &kp LS(GT)    &kp N1  &kp N2  &kp N3  &none
                                         &none          &mo 1      &none          &kp LEFT_SHIFT  &mo 2         &kp N0
@@ -97,9 +83,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none         &kp F1  &kp F2   &kp F3        &kp F4   &mac_copy         &kp INSERT  &kp BACKSPACE  &kp UP    &kp DELETE    &none    &kp C_BRIGHTNESS_INC
+&ctrl_win     &kp F1  &kp F2   &kp F3        &kp F4   &none             &kp INSERT  &kp BACKSPACE  &kp UP    &kp DELETE    &none    &kp C_BRIGHTNESS_INC
 &kp LCTRL     &kp F5  &kp F6   &kp F7        &kp F8   &none             &kp PG_UP   &kp LEFT       &kp DOWN  &kp RIGHT     &kp RET  &kp LEFT_ALT
-&kp LEFT_WIN  &kp F9  &kp F10  &kp F11       &kp F12  &mac_paste        &kp PG_DN   &kp HOME       &kp TAB   &kp LEFT_WIN  &kp END  &kp C_BRIGHTNESS_DEC
+&kp LEFT_WIN  &kp F9  &kp F10  &kp F11       &kp F12  &none             &kp PG_DN   &kp HOME       &kp TAB   &kp LEFT_WIN  &kp END  &kp C_BRIGHTNESS_DEC
                                &kp LEFT_ALT  &mo 1    &kp LEFT_SHIFT    &none       &mo 2          &none
             >;
         };
