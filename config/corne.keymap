@@ -76,10 +76,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(LEFT_WIN)  &kp F1  &kp F2   &kp F3        &kp F4   &none             &kp INSERT  &kp BACKSPACE  &kp UP    &kp DELETE    &none    &kp C_BRIGHTNESS_INC
-&kp LCTRL         &kp F5  &kp F6   &kp F7        &kp F8   &none             &kp PG_UP   &kp LEFT       &kp DOWN  &kp RIGHT     &kp RET  &kp LEFT_ALT
-&kp LEFT_WIN      &kp F9  &kp F10  &kp F11       &kp F12  &none             &kp PG_DN   &kp HOME       &kp TAB   &kp LEFT_WIN  &kp END  &kp C_BRIGHTNESS_DEC
-                                   &kp LEFT_ALT  &mo 1    &kp LEFT_SHIFT    &none       &mo 2          &none
+&mo 5         &kp F1  &kp F2   &kp F3        &kp F4   &none             &kp INSERT  &kp BACKSPACE  &kp UP    &kp DELETE    &none    &kp C_BRIGHTNESS_INC
+&kp LCTRL     &kp F5  &kp F6   &kp F7        &kp F8   &none             &kp PG_UP   &kp LEFT       &kp DOWN  &kp RIGHT     &kp RET  &kp LEFT_ALT
+&kp LEFT_WIN  &kp F9  &kp F10  &kp F11       &kp F12  &none             &kp PG_DN   &kp HOME       &kp TAB   &kp LEFT_WIN  &kp END  &kp C_BRIGHTNESS_DEC
+                               &kp LEFT_ALT  &mo 1    &kp LEFT_SHIFT    &none       &mo 2          &none
             >;
         };
 
@@ -98,6 +98,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1   &trans         &trans         &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
                         &trans  &trans  &trans    &trans         &trans         &trans
+            >;
+        };
+
+        desktop_switch {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                  &trans  &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(LC(LEFT_ARROW))  &trans  &kp LC(LG(RIGHT_ARROW))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                  &trans  &trans                   &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans                  &trans
             >;
         };
     };
